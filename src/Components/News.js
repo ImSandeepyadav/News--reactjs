@@ -61,7 +61,7 @@ export class News extends Component {
             <>
             <h2 className="text-center" style={{margin: "30px 0px", marginTop: "90px"}}>News - Top {this.capitalizeFirstLetter(this.props.category)} Headlines </h2>
             <InfiniteScroll
-                dataLength={this.state.articles.length}
+                dataLength={this.state.articles?.length}
                 next={this.fetchMoreData}
                 hasMore={this.state.articles.length !== this.state.totalResults}
                 >
